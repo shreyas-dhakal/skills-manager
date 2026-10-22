@@ -1,0 +1,12 @@
+{
+  "name": "local-agent-skills-manager",
+  "version": "0.1.0",
+  "description": "Find, select, and remove agent skills installed on your computer.",
+  "type": "module",
+  "bin": { "skills-manager": "bin/skills-manager.js" },
+  "files": ["bin", "lib", "README.md", "LICENSE"],
+  "scripts": { "start": "node bin/skills-manager.js", "test": "node --test", "check": "node --check bin/skills-manager.js && node --check lib/discovery.js && node --check lib/ui.js" },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "keywords": ["skills", "agents", "cli", "claude", "codex", "cursor"]
+}
